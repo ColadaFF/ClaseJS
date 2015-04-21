@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/04/2015, 05:08:27 PM
+    Author     : Verde1
+*/
+
+@colorMain: red;
+@colorSecond: blue;
+@relativePos : relative;
+
+@media(max-width: 800px){
+    .class::after{
+        position: @relativePos;
+        right: 0;
+        content: '***';
+        color: @colorMain;
+    }
+}
+
+@media(min-width: 1000px){
+    .class::after{
+        position: @relative;
+        right: 3%;
+        content: '***';
+        color: @colorSecond;
+    }
+}
